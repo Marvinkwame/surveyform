@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h1 id="title">W3 Schools Survey Form</h1>
+    <p id="description">Thank you for taking time to help us improve our services</p>
+
+
+    <form id="survey-form">
+        <div class="form-control">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name"required>
+            <br>
+        <div>
+      
+        <div class="form-control">
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            <br>
+        </div>
+      
+        <div class="form-control">
+            <label for="number" id="number-label"> Age (optional)</label>
+            <input id="number" type="number" name="number" placeholder="Age" min="10" max="80" required>
+            <br>
+            <br>
+        </div>
+        
+        <div class="form-control">  
+            <label for="dropdown" id="status">What option describes your current work status</label>
+            <select name="status" id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Part time">Part-time</option>
+                <option value="Full time">Full time</option>
+                <option value="Prefer not to say">Prefer not to say </option>
+                <option value="others">Others</option>    
+            </select>
+            <br>
+            <br>
+        </div>
+        
+        <div class="form-control">
+            <label>Would you recommend W3 schools to a friend?</label><br>
+            <input type="radio" id="question" name="answers" value="Definitely">
+            <label for="questions">Definitely</label>
+            <br>
+      
+            <input type="radio" id="questions" name="answers" value="Maybe">
+            <label for="questions">Maybe</label>
+            <br>
+    
+            <input type="radio" id="questions" name="answers" value="Not sure">
+            <label for="questions">Not sure</label>
+            <br>
+            <br>
+        </div>
+        
+        <div class="form-control">    
+            <p>What would you like to see improved?  (Check all that apply)</p>
+            <input type="checkbox" id="option1" name="option1" value="Front-end Projects">
+            <label for="option1">Front-end Projects</label>
+            <br>
+    
+            <input type="checkbox" id="option2" name="option2" value="Back-end Projects">
+            <label for="option2">Back-end Projects</label>
+            <br>
+    
+            <input type="checkbox" id="option3" name="option3" value="Challenges">
+            <label for="option3">Challenges</label>
+            <br>
+    
+            <input type="checkbox" id="option4" name="option4" value="Examples">
+            <label for="option4">Examples</label>
+            <br>
+    
+            <input type="checkbox" id="option5" name="option5" value="Open Source Community">
+            <label for="option5">Open Source Community</label>
+            <br>
+    
+            <input type="checkbox" id="option6" name="option6" value="Additional  Courses">
+            <label for="option6">Additional Courses</label>
+            <br>
+    
+            <input type="checkbox" id="option7" name="option7" value="Videos">
+            <label for="option7">Videos</label>
+            <br>
+        </div> 
+      
+        
+        <div class="form-control">   
+            <label for="comments">Any comments or suggestions</label>
+            <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+            <br> 
+        </div> 
+       
+       
+        <button type="submit" value="Submit" id="submit">Submit</button> 
+    </form>
+
+
+</body>
+</html>
